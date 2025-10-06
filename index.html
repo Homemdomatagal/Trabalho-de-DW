@@ -1,266 +1,290 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="./styles.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
-rel="stylesheet"
-/>
-<title>Formulário</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
 
 
 <style>
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-font-family: 'Poppins', sans-serif;
-}
+    
 
-body {
-width: 100%;
-min-height: 100vh;
-background: linear-gradient(135deg, #1565c0 0%, #1e88e5 50%, #42a5f5 100%);
-display: flex;
-justify-content: center;
-align-items: center;
-}
 
-.container {
-background-color: #fafafa;
-border-radius: 10px;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-width: 400px;
-max-width: 100%;
-overflow: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Modak&family=Rubik+Moonrocks&display=swap');
 
-.header {
-background-color: #eee;
-padding: 20px;
-}
 
-.form {
-padding: 20px;
-}
-
-.form-control {
-margin-bottom: 10px;
-padding-bottom: 20px;
-position: relative;
-}
-
-.form-control label {
-display: inline-block;
-margin-bottom: 5px;
-}
-
-.form-control input {
-border: 2px solid #f0f0f0;
-display: block;
-border-radius: 10px;
-font-size: 14px;
-width: 100%;
-padding: 10px;
-}
-
-.form-control i {
-position: absolute;
-top: 45px;
-right: 10px;
-visibility: hidden;
-}
-
-.form-control small {
-position: absolute;
-bottom: 0;
-left: 0;
-visibility: hidden;
-}
-
-.form button {
-background-color: #e53935;
-border: 2px solid #e53935;
-color: #fff;
-font-size: 14px;
-width: 100%;
-border-radius: 10px;
-padding: 10px;
-transition: background 0.3s ease;
-}
-
-.form button:hover {
-background-color: #c62828;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: atma;
 }
 
 
 
-
-.form-control.success input {
-border-color: #2ecc71;
+body{
+    
+    background-image: url(New\ Piskel.gif);
+    color:aliceblue
 }
 
-.form-control.error input {
-border-color: #e74c3c;
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    height: 80%;
+    background: rgb(36, 36, 66);
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px 15px;
+    opacity: 75%;
+    margin-top: -90%;
 }
 
-.form-control.success i.fa-check-circle {
-color: #2ecc71;
-visibility: visible;
+p{
+    margin-top: 10%;
 }
 
-.form-control.error i.fa-exclamation-circle {
-color: #e74c3c;
-visibility: visible;
+.oi{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-self: fixed;
+    width: 40%;
+    height: 200px;
+    background-color: rgb(23, 23, 46);
+    margin: 20px auto;
+    margin: 10%;
+    border-radius: 10px;
+    padding: 20px 15px;
+    opacity: 75%;
+    margin-top: -1%;
+    margin-left: 30%;
+
+
 }
 
-.form-control.error small {
-visibility: visible;
-color: #e74c3c;
+
+h1{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    place-self: fixed;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
+input{
+    width: 40%;
+    height: 10%;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    color: rgb(53, 53, 82);
+    font-size: 16px;
+    box-shadow: 0 0 15px rgb(29, 29, 29);
+    opacity: 75%;
+    
+}
 
+label{
+    font-size: 18px;
+    
+    text-shadow: 1px 1px 1px;
+}
+
+.dados{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 50%;
+}
+
+.invi{
+    width: 100%;
+    height: 65;
+
+
+}
+
+.Prosseguir{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    place-self: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(23, 23, 46);
+    margin: 20px auto;
+    margin: 10%;
+    border-radius: 10px;
+    padding: 20px 15px;
+    opacity: 95%;
+    
+    margin-left: 5%;
+    
+    
+
+
+}
+
+button{
+    width: 153px;
+    height: 40px;
+    background: rgb(122, 132, 150);
+    color: aliceblue;
+    border: 3px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 75%;
+    
+}
+
+button:hover{
+    background: rgb(168, 172, 180);
+    transition: .2s;
+}
+
+.botao{
+    display: flex;
+    justify-content: flex-end;
+    width: 100px;
+
+}
 </style>
 
 
 
-</head>
 <body>
-<div class="container">
-<div class="header">
-<h2>Criar Uma Conta</h2>
+
+    <div class="fundo">
+
+        <img src="New Piskel.gif" height="100%" width="100%" >
+
+    <div class="invi">
+    
+        <div class="formulario">
+        
+
+            <h1>Login</h1>
+        
+            <label for="nome">Email:</label>
+        
+        <input type="text" id="nome"
+            placeholder="Digite o seu email aqui">
+    
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha"
+            placeholder="Digite o sua senha aqui">
+    
+
+    <label for="senha">Confirmar:</label>
+    <input type="password" id="senha2"
+            placeholder="Digite o sua confirmação de senha aqui">
+    
+        
+        
+    </div>
+        <div class="oi">
+            <p id="mensagem"></p>
+        
+            <div class="Prosseguir">
+                <button id="Prosseguir" onclick="dizerOi()">Prosseguir</button>
+                <button id="redefinirSenha" style="display: none;" onclick="redefinirSenha()">Redefinir Senha</button>
+            </div>
+            
+
+        </div>
+        
+    </div>
 </div>
 
-<form id="form" class="form">
-<div class="form-control">
-<label for="username">Nome de usuário</label>
-<input
-type="text"
-id="username"
-placeholder="Digite seu nome de usuário..."
-/>
-<i class="fas fa-exclamation-circle"></i>
-<i class="fas fa-check-circle"></i>
-<small>Mensagem de erro</small>
-</div>
 
-<div class="form-control">
-<label for="email">Email</label>
-<input type="text" id="email" placeholder="Digite seu email.." />
-<i class="fas fa-exclamation-circle"></i>
-<i class="fas fa-check-circle"></i>
-<small>Mensagem de erro</small>
-</div>
 
-<div class="form-control">
-<label for="password">Senha</label>
-<input
-type="password"
-id="password"
-placeholder="Digite sua senha..."
-/>
-<i class="fas fa-exclamation-circle"></i>
-<i class="fas fa-check-circle"></i>
-<small>Mensagem de erro</small>
-</div>
 
-<div class="form-control">
-<label for="password-confirmation">Confirmação de senha</label>
-<input
-type="password"
-id="password-confirmation"
-placeholder="Digite sua senha novamente..."
-/>
-<i class="fas fa-exclamation-circle"></i>
-<i class="fas fa-check-circle"></i>
-<small>Mensagem de erro</small>
-</div>
 
-<button type="submit">Enviar</button>
-</form>
-</div>
-
-<script
-src="https://kit.fontawesome.com/f9e19193d6.js"
-crossorigin="anonymous"
-></script>
-
-<script src="./scripts.js"></script>
-</body>
-</html>
 
 <script>
-    const form = document.getElementById('form')
-const username = document.getElementById('username')
-const email = document.getElementById('email')
-const password = document.getElementById('password')
-const passwordConfirmation = document.getElementById('password-confirmation')
-// para captuarar os valores dos elementos com aquele Id, no caso estamos capturando os valoes dos input
 
-form.addEventListener('submit', (e) => { // para capturar um evento sim, nem sempre pra fazer uma funcao
-    e.preventDefault()
+const nome = document.querySelector('#nome');
+const msg = document.querySelector('#mensagem');
+const senha = document.querySelector('#senha');
+const confirm = document.querySelector('#senha2');
+const prosseguir = document.querySelector('#Prosseguir');
+const redefinirSenhaBtn = document.querySelector('#redefinirSenha');
 
-    checkInputs()
-})
+let tentativas = 0; // Contador de tentativas
+let correto = 'ana';
+let senha1 = '123';
 
-function checkInputs() {
-    const usernameValue = username.value;
-    const emailValue = email.value;
-    const passwordValue = password.value;
-    const passwordConfirmationValue = passwordConfirmation.value;
+function dizerOi() {
+    if (nome.value === '' && senha.value === '' && confirm.value === '') {
+        msg.innerHTML = `Preencha os espaços!!! >:(`;
+    } else if (nome.value === '') {
+        msg.innerHTML = `Boa tentativa, mas você precisa colocar o email! >:(`;
+    } else if (nome.value !== correto) {
+        msg.innerHTML = `Email incorreto! Quem é você? >:(`;
+    } else if (senha.value === '') {
+        msg.innerHTML = `Boa tentativa, mas você precisa colocar a senha! >:P`;
+    } else if (confirm.value === '') {
+        msg.innerHTML = `Tem que confirmar a senha! >:/`;
+    } else if (confirm.value === senha1 && confirm.value === senha.value) {
+        msg.innerHTML = `Bem vinda! :)`;
 
-    console.log(usernameValue)
-
-
-    if (usernameValue === '') { // para validar um  campo
-        setErrorFor(username, 'O nome do usuário é obrigatório');// class no css com a mensagem de erro pois o campo esta vazio
+        setTimeout(() => {
+            window.location.href = 'inicial.html';
+        }, 1000);
     } else {
-        setSuccesFor(username); // se estiver prenchida ele volta verdinho indicando que foi aceito
-    }
+        tentativas++; // Incrementa o contador de tentativas
+        msg.innerHTML = `Nuh uh! Senha errada! Tentativa ${tentativas} :/`;
 
-    if (emailValue === '') { // para validar um  campo
-        setErrorFor(email, 'O email é obrigatório');// class no css com a mensagem de erro pois o campo esta vazio
-    } else {
-        setSuccesFor(email); // se estiver prenchida ele volta verdinho indicando que foi aceito
+        if (tentativas >= 3) {
+            msg.innerHTML = `Você errou 3 vezes! Deseja redefinir sua senha?`;
+            redefinirSenhaBtn.style.display = 'block'; // Mostra o botão de redefinir senha
+        }
     }
-
-    if (passwordValue === '') { // para validar um  campo
-        setErrorFor(password, 'A senha é obrigatória');// class no css com a mensagem de erro pois o campo esta vazio
-    } else {
-        setSuccesFor(password); // se estiver prenchida ele volta verdinho indicando que foi aceito
-    }
-
-    if (passwordConfirmationValue === '') { // para validar um  campo
-        setErrorFor(passwordConfirmation, 'Confirme sua senha');// class no css com a mensagem de erro pois o campo esta vazio
-    }else{ if (passwordConfirmationValue !== passwordValue) {
-        setErrorFor(passwordConfirmation, 'Confirmação incorreta');
-    }else{
-        setSuccesFor(passwordConfirmation); // se estiver prenchida ele volta verdinho indicando que foi aceito
-    }
-    }
-
 }
 
-function setErrorFor(input, menssage) { // parametros q ela recebe quando a funcao é chamada, calcula dois valores, o input e o local
-    const formControl = input.parentElement; // para pegar todos os elementos do input (email, username, senha e confirmacao)
-    const small = formControl.querySelector('small'); //
+function redefinirSenha() {
+    let novaSenha = prompt('Digite sua nova senha:');
+    let confirmarNovaSenha = prompt('Confirme sua nova senha:');
 
-    small.innerText = menssage; // na tag small ela pocura o input ex username e troca a mensagem de texto
-
-    formControl.className = 'form-control error';
+    if (novaSenha && novaSenha === confirmarNovaSenha) {
+        senha1 = novaSenha; // Atualiza a senha correta
+        tentativas = 0;     // Reseta o contador de tentativas
+        msg.innerHTML = `Senha redefinida com sucesso! Agora você pode tentar novamente :)`;
+        redefinirSenhaBtn.style.display = 'none'; // Oculta o botão de redefinir senha
+    } else {
+        msg.innerHTML = `As senhas não coincidem. Tente redefinir novamente.`;
+    }
 }
 
-function setSuccesFor(input) {
-    const formControl = input.parentElement;
 
-    formControl.className = 'form-control success';
-}
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
 
 function checkEmail(email) { // para checar os caracteres nao permitidos no campo de escrever
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
