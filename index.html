@@ -3,290 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Trabalho de DW</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-
-
-<style>
-    
-
-
-@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Modak&family=Rubik+Moonrocks&display=swap');
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: atma;
-}
-
-
-
-body{
-    
-    background-image: url(New\ Piskel.gif);
-    color:aliceblue
-}
-
-.formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 60%;
-    height: 80%;
-    background: rgb(36, 36, 66);
-    margin: 20px auto;
-    border-radius: 10px;
-    padding: 20px 15px;
-    opacity: 75%;
-    margin-top: -90%;
-}
-
-p{
-    margin-top: 10%;
-}
-
-.oi{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    place-self: fixed;
-    width: 40%;
-    height: 200px;
-    background-color: rgb(23, 23, 46);
-    margin: 20px auto;
-    margin: 10%;
-    border-radius: 10px;
-    padding: 20px 15px;
-    opacity: 75%;
-    margin-top: -1%;
-    margin-left: 30%;
-
-
-}
-
-
-h1{
-    align-content: center;
-    display: flex;
-    flex-direction: column;
-    place-self: fixed;
-    color: aliceblue;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-
-input{
-    width: 40%;
-    height: 10%;
-    border-radius: 5px;
-    border: none;
-    padding: 7px;
-    color: rgb(53, 53, 82);
-    font-size: 16px;
-    box-shadow: 0 0 15px rgb(29, 29, 29);
-    opacity: 75%;
-    
-}
-
-label{
-    font-size: 18px;
-    
-    text-shadow: 1px 1px 1px;
-}
-
-.dados{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-left: 50%;
-}
-
-.invi{
-    width: 100%;
-    height: 65;
-
-
-}
-
-.Prosseguir{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    place-self: fixed;
-    width: 100%;
-    height: 90px;
-    background-color: rgb(23, 23, 46);
-    margin: 20px auto;
-    margin: 10%;
-    border-radius: 10px;
-    padding: 20px 15px;
-    opacity: 95%;
-    
-    margin-left: 5%;
-    
-    
-
-
-}
-
-button{
-    width: 153px;
-    height: 40px;
-    background: rgb(122, 132, 150);
-    color: aliceblue;
-    border: 3px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    opacity: 75%;
-    
-}
-
-button:hover{
-    background: rgb(168, 172, 180);
-    transition: .2s;
-}
-
-.botao{
-    display: flex;
-    justify-content: flex-end;
-    width: 100px;
-
-}
-</style>
-
-
-
 <body>
+    <div class="formulario">
+        <h1>Login</h1>
 
-    <div class="fundo">
+        <label for="nome">Email:</label>
+        <input type="text" id="email" placeholder="Digite o seu email aqui" />
 
-        <img src="New Piskel.gif" height="100%" width="100%" >
+        <label for="tipo">Tipo de cadastro:</label>
+        <select id="tipo">
+        <option value="">Selecione...</option>
+        <option value="cpf">Pessoa Física (CPF)</option>
+        <option value="cnpj">Pessoa Jurídica (CNPJ)</option>
+        </select>
 
-    <div class="invi">
-    
-        <div class="formulario">
-        
+        <label for="documento">CPF / CNPJ:</label>
+        <input type="text" id="documento" placeholder="Digite seu CPF ou CNPJ..." />
 
-            <h1>Login</h1>
-        
-            <label for="nome">Email:</label>
-        
-        <input type="text" id="nome"
-            placeholder="Digite o seu email aqui">
-    
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" placeholder="Digite sua senha aqui" />
 
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha"
-            placeholder="Digite o sua senha aqui">
-    
+        <label for="senha2">Confirmar senha:</label>
+        <input type="password" id="senha2" placeholder="Confirme sua senha aqui" />
 
-    <label for="senha">Confirmar:</label>
-    <input type="password" id="senha2"
-            placeholder="Digite o sua confirmação de senha aqui">
-    
-        
-        
-    </div>
-        <div class="oi">
-            <p id="mensagem"></p>
-        
-            <div class="Prosseguir">
-                <button id="Prosseguir" onclick="dizerOi()">Prosseguir</button>
-                <button id="redefinirSenha" style="display: none;" onclick="redefinirSenha()">Redefinir Senha</button>
-            </div>
-            
-
+        <div class="botao">
+        <button id="prosseguir">Prosseguir</button>
+        <button id="redefinirSenha" style="display: none;">Redefinir Senha</button>
         </div>
-        
     </div>
-</div>
 
+    <div class="oi">
+        <p id="mensagem"></p>
+  </div>
 
-
-
-
-
-<script>
-
-const nome = document.querySelector('#nome');
-const msg = document.querySelector('#mensagem');
-const senha = document.querySelector('#senha');
-const confirm = document.querySelector('#senha2');
-const prosseguir = document.querySelector('#Prosseguir');
-const redefinirSenhaBtn = document.querySelector('#redefinirSenha');
-
-let tentativas = 0; // Contador de tentativas
-let correto = 'ana';
-let senha1 = '123';
-
-function dizerOi() {
-    if (nome.value === '' && senha.value === '' && confirm.value === '') {
-        msg.innerHTML = `Preencha os espaços!!! >:(`;
-    } else if (nome.value === '') {
-        msg.innerHTML = `Boa tentativa, mas você precisa colocar o email! >:(`;
-    } else if (nome.value !== correto) {
-        msg.innerHTML = `Email incorreto! Quem é você? >:(`;
-    } else if (senha.value === '') {
-        msg.innerHTML = `Boa tentativa, mas você precisa colocar a senha! >:P`;
-    } else if (confirm.value === '') {
-        msg.innerHTML = `Tem que confirmar a senha! >:/`;
-    } else if (confirm.value === senha1 && confirm.value === senha.value) {
-        msg.innerHTML = `Bem vinda! :)`;
-
-        setTimeout(() => {
-            window.location.href = 'inicial.html';
-        }, 1000);
-    } else {
-        tentativas++; // Incrementa o contador de tentativas
-        msg.innerHTML = `Nuh uh! Senha errada! Tentativa ${tentativas} :/`;
-
-        if (tentativas >= 3) {
-            msg.innerHTML = `Você errou 3 vezes! Deseja redefinir sua senha?`;
-            redefinirSenhaBtn.style.display = 'block'; // Mostra o botão de redefinir senha
-        }
-    }
-}
-
-function redefinirSenha() {
-    let novaSenha = prompt('Digite sua nova senha:');
-    let confirmarNovaSenha = prompt('Confirme sua nova senha:');
-
-    if (novaSenha && novaSenha === confirmarNovaSenha) {
-        senha1 = novaSenha; // Atualiza a senha correta
-        tentativas = 0;     // Reseta o contador de tentativas
-        msg.innerHTML = `Senha redefinida com sucesso! Agora você pode tentar novamente :)`;
-        redefinirSenhaBtn.style.display = 'none'; // Oculta o botão de redefinir senha
-    } else {
-        msg.innerHTML = `As senhas não coincidem. Tente redefinir novamente.`;
-    }
-}
-
-
-
-
-
-
-
-
-</script>
+  <script src="scripts.js" defer></script>
 
 </body>
-
 </html>
-
-function checkEmail(email) { // para checar os caracteres nao permitidos no campo de escrever
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-        email
-    );
-}
-</script>
