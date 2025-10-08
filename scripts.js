@@ -8,8 +8,8 @@ const prosseguir = document.querySelector('#Prosseguir');
 const redefinirSenhaBtn = document.querySelector('#redefinirSenha');
 
 let tentativas = 0; // Contador de tentativas
-let correto = 'ana';
-let senha1 = '123';
+let correto = 'abc.123@gmail.com';
+let senha1 = '12344321';
 
 function dizerOi() {
     if (nome.value === '' && senha.value === '' && confirm.value === '') {
