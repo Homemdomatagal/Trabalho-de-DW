@@ -1,1 +1,89 @@
-bla
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Atma', cursive;
+}
+
+body {
+    background-image: url('New Piskel.gif');
+    color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    background: rgba(36, 36, 66, 0.9);
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-top: 3%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px black;
+}
+
+input,
+select {
+    width: 60%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+    color: rgb(53, 53, 82);
+    font-size: 16px;
+    box-shadow: 0 0 10px rgb(29, 29, 29);
+    opacity: 85%;
+    margin-top: 5px;
+}
+
+button {
+    width: 150px;
+    height: 40px;
+    background: rgb(122, 132, 150);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 85%;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: rgb(168, 172, 180);
+}
+
+.oi {
+    text-align: center;
+    background-color: rgba(23, 23, 46, 0.9);
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#mensagem {
+    font-size: 18px;
+    margin-bottom: 15px;
+    min-height: 25px;
+}
