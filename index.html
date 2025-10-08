@@ -16,12 +16,18 @@
         <label for="tipo">Tipo de cadastro:</label>
         <select id="tipo">
         <option value="">Selecione...</option>
-        <option value="cpf">Pessoa Física (CPF)</option>
-        <option value="cnpj">Pessoa Jurídica (CNPJ)</option>
+        <div class="macaco">
+            <option value="cpf">Pessoa Física (CPF)</option>
+            <option value="cnpj">Pessoa Jurídica (CNPJ)</option>
+        </div>
         </select>
 
-        <label for="documento">CPF / CNPJ:</label>
-        <input type="text" id="documento" placeholder="Digite seu CPF ou CNPJ..." />
+        <label style="display: none;" id="label"
+        onclick="label()" for="documento">CPF / CNPJ:</label>
+        <input style="display: none;" type="text" id="CPF"
+        onclick="cpf()" placeholder="Digite seu CPF..." />
+        <input style="display: none;" type="text" id="CNPJ"
+        onclick="cnpj()" placeholder="Digite seu CNPJ..." />
 
         <label for="senha">Senha:</label>
         <input type="password" id="senha" placeholder="Digite sua senha aqui" />
