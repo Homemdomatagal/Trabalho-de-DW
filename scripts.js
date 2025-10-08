@@ -50,3 +50,28 @@ function redefinirSenha() {
         msg.innerHTML = `As senhas não coincidem. Tente redefinir novamente.`;
     }
 }
+
+function cpf() {
+    let novaSenha = prompt('Digite sua nova senha:');
+    let confirmarNovaSenha = prompt('Confirme sua nova senha:');
+
+    if (novaSenha && novaSenha === confirmarNovaSenha) {
+        senha1 = novaSenha; // Atualiza a senha correta
+        tentativas = 0;     // Reseta o contador de tentativas
+        msg.innerHTML = `Senha redefinida com sucesso! Agora você pode tentar novamente :)`;
+        redefinirSenhaBtn.style.display = 'none'; // Oculta o botão de redefinir senha
+    } else {
+        msg.innerHTML = `As senhas não coincidem. Tente redefinir novamente.`;
+    }
+}
+
+function cnpj() {
+    const validacpf = (cpf) => {
+        cpf = cpf.replace(/\D/g, '')
+
+        if(cpf.lenght !== 11){
+            msg.innerHTML = `O CPF precisa ter 11 dígitos`
+            return
+        }
+    }
+}
