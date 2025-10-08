@@ -5,7 +5,7 @@ const confirm = document.querySelector('#senha2');
 const prosseguir = document.querySelector('#Prosseguir');
 const redefinirSenhaBtn = document.querySelector('#redefinirSenha');
 
-let tentativas = 0; // Contador de tentativas
+let tentativas = 0; 
 let correto = 'ana';
 let senha1 = '123';
 
@@ -27,12 +27,12 @@ function dizerOi() {
             window.location.href = 'inicial.html';
         }, 1000);
     } else {
-        tentativas++; // Incrementa o contador de tentativas
+        tentativas++; 
         msg.innerHTML = `Nuh uh! Senha errada! Tentativa ${tentativas} :/`;
 
         if (tentativas >= 3) {
             msg.innerHTML = `Você errou 3 vezes! Deseja redefinir sua senha?`;
-            redefinirSenhaBtn.style.display = 'block'; // Mostra o botão de redefinir senha
+            redefinirSenhaBtn.style.display = 'block'; 
         }
     }
 }
@@ -42,10 +42,10 @@ function redefinirSenha() {
     let confirmarNovaSenha = prompt('Confirme sua nova senha:');
 
     if (novaSenha && novaSenha === confirmarNovaSenha) {
-        senha1 = novaSenha; // Atualiza a senha correta
-        tentativas = 0;     // Reseta o contador de tentativas
+        senha1 = novaSenha; 
+        tentativas = 0;     
         msg.innerHTML = `Senha redefinida com sucesso! Agora você pode tentar novamente :)`;
-        redefinirSenhaBtn.style.display = 'none'; // Oculta o botão de redefinir senha
+        redefinirSenhaBtn.style.display = 'none'; 
     } else {
         msg.innerHTML = `As senhas não coincidem. Tente redefinir novamente.`;
     }
@@ -56,10 +56,10 @@ function cpf() {
     let confirmarNovaSenha = prompt('Confirme sua nova senha:');
 
     if (novaSenha && novaSenha === confirmarNovaSenha) {
-        senha1 = novaSenha; // Atualiza a senha correta
-        tentativas = 0;     // Reseta o contador de tentativas
+        senha1 = novaSenha; 
+        tentativas = 0;     
         msg.innerHTML = `Senha redefinida com sucesso! Agora você pode tentar novamente :)`;
-        redefinirSenhaBtn.style.display = 'none'; // Oculta o botão de redefinir senha
+        redefinirSenhaBtn.style.display = 'none'; 
     } else {
         msg.innerHTML = `As senhas não coincidem. Tente redefinir novamente.`;
     }
