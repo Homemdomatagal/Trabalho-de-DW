@@ -6,14 +6,14 @@ const prosseguir = document.querySelector('#Prosseguir');
 const redefinirSenhaBtn = document.querySelector('#redefinirSenha');
 
 let tentativas = 0; 
-let correto = 'ana';
-let senha1 = '123';
+let correto = 'abc.123@gmail.com';
+let senha1 = '12344321';
 
 function dizerOi() {
     if (nome.value === '' && senha.value === '' && confirm.value === '') {
         msg.innerHTML = `Preencha os espaços!!! >:(`;
     } else if (nome.value === '') {
-        msg.innerHTML = `Boa tentativa, mas você precisa colocar o email! >:(`;
+        msg.innerHTML = `Você precisa colocar o email! >:(`;
     } else if (nome.value !== correto) {
         msg.innerHTML = `Email incorreto! Quem é você? >:(`;
     } else if (senha.value === '') {
